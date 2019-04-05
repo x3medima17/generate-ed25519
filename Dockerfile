@@ -1,9 +1,7 @@
-from ubuntu
+from python:3.7
 
 RUN apt-get update
 RUN apt-get -y install git
-RUN apt-get -y install python3
-RUN apt-get -y install python3-pip
 
 RUN pip3 install git+https://github.com/Warchant/pyed25519-sha3
 RUN pip3 install future
